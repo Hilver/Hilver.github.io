@@ -2,8 +2,8 @@ title: hilver.github.io
 email: peczkowskip@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a personal blog with the latest updates about author's packages/projects and sometimes with some news from IT world :)
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://hilver.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Hilver
 github_username:  Hilver
 
