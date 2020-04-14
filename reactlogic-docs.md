@@ -6,7 +6,7 @@ permalink: /reactlogic-docs/
 ## Installation
 
 ```
-npm install reactlogic
+npm install reactlogic-hooks-library
 ```
 
 ## API
