@@ -3,16 +3,10 @@ layout: page
 title: About
 permalink: /about/
 ---
+Hey, welcome to my site!
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+My name is Paweł and I'm passionate about new technologies, programming, automation stuff and many other things not strictly related to the topic of this blog :) 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+The idea of this site is simple. Through my programming journey I have encountered many problems that seem repetitive and to which I have often not found a clear answer. Moreover I read and learn a lot of interesting things which can be helpful or inspirational to someone (I hope!). 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+So, sometimes there will appear some stuff about my current problems, challenges, thoughts and I will be glad if even one person will find this site helpful! :)
