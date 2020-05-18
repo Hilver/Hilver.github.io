@@ -49,6 +49,7 @@ And we are ready to make some code:
 If we run the above code, the Chrome browser will open, go to the specified address and quit. So far so good, now we can go deeper. To get link we could type some three letters in the search input and choose random link from the drop-down list. Let's do that in a few steps:
 
 1. Create array of alphabet letters, and functions to get random string:
+
 ```javascript
 const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
 
@@ -56,10 +57,13 @@ const getRandomVal = source => source[Math.floor(Math.random() * source.length)]
 
 const randomString = length => [...Array(length)].map(_ => getRandomVal(alphabet)).join('')
 ```
+
 2. Create a delay function, which will helps us to handle cases when DOM elements are not showing yet:
+
 ```javascript
 const delay = ms => new Promise(resolve => setTimeout(() => resolve(), ms))
 ```
+
 3. Now we want to go to **wikipedia** and type three random letters into search input:
 ```javascript
 try {
@@ -69,6 +73,7 @@ await driver.findElement(By.id('searchInput')).sendKeys(randomString(3))
 
 ...
 ```
+
 4. Target element with suggestion links and get an array of these links:
 ```javascript
 const suggestionResults = await driver.wait(until.elementLocated(By.className('suggestions-results')));
@@ -79,6 +84,7 @@ const suggestionResultsList = await suggestionResults.findElements(By.className(
 ```
 As you can see I've used two different approaches to wait for DOM elements. But there is more. I encorage you to look on the official documentation if you're into it.
 5. Get random link from the list:
+
 ```javascript
 const link = await getRandomVal(suggestionResultsList).getAttribute('href')
 }
