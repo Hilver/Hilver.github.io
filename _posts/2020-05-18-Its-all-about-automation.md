@@ -48,6 +48,7 @@ And we are ready to make some code:
 
 If we run the above code, the Chrome browser will open, go to the specified address and quit. So far so good, now we can go deeper. To get link we could type some three letters in the search input and choose random link from the drop-down list. Let's do that in a few steps:
 
+{:start="1"}
 1. Create array of alphabet letters, and functions to get random string:
 
 ```javascript
@@ -75,6 +76,7 @@ await driver.findElement(By.id('searchInput')).sendKeys(randomString(3))
 ```
 
 4. Target element with suggestion links and get an array of these links:
+
 ```javascript
 const suggestionResults = await driver.wait(until.elementLocated(By.className('suggestions-results')));
 
@@ -150,6 +152,7 @@ That's it, we have it! Full repository of this example you **[can find here](htt
 ## Task automation!
 All what we want for now is to launch command `node index.js` in our CLI in particular intervals of time. There are many ways how to do that and mostly depend on what operating system you use. In this article I'll describe how to automate task in very easy way on Windows platform:
 
+{:start="1"}
 1. **Launch Task Scheduler**
 
 The easiest way is to type Task Scheduler into the Start menu search.
